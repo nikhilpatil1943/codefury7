@@ -1,0 +1,47 @@
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .weather-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.5rem; /* Adjusted for reasonable size */
+  }
+  
+  .location-block {
+    background-color: #3b5998; /* Facebook-like blue */
+  }
+  
+  .condition-block {
+    background-color: #ff9900; /* Orange */
+  }
+  
+  .temp-wind-block{
+    background-color: #043633; /* Light Sea Green */
+  }
+  
+  .humidity-block {
+    background-color: #4682b4; /* Steel Blue */
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .weather-container {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 3px;
+    }
+  
+    .weather-block {
+      font-size: 1rem; /* Slightly smaller for smaller screens */
+      height: 20px;
+    }
+  }
