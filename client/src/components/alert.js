@@ -15,7 +15,7 @@ const AlertCard = () => {
             const lat = 18.97024776829818; // Replace with actual latitude
             const lon = 73.08812693745676; // Replace with actual longitude
 
-            const response = await axios.post('http://localhost:5000/getAlertByLocation', { lat, lon });
+            const response = await axios.post('codefury7-1dg8.vercel.app/getAlertByLocation', { lat, lon });
 
             if (response.data.alerts) {
                 setAlert(response.data.alerts[0]); // Assuming only one alert per district
