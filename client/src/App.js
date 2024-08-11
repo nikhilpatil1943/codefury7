@@ -6,6 +6,10 @@ import { About } from "./components/Pages/About";
 import { Blog } from "./components/Pages/Blog";
 import { Contact } from "./components/Pages/Contact";
 import Login from "./components/Pages/Login";
+import Dashboard from "./components/Pages/Dashboard";
+import Testw from "./components/Pages/tt";
+import AlertCard from "./components/alert";
+import BlogCards from "./components/blogCard";
 
 function App() {
   return (
@@ -15,11 +19,12 @@ function App() {
 
         <div className="pages">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<div><Home /><Testw/><AlertCard/><BlogCards/></div>} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} /> 
             <Route path="/login" element={<Login/>} />
+            <Route path="/dashboard" element={<Dashboard/>}></Route>
           </Routes>
         </div>
       </Router>

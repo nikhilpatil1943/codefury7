@@ -1,0 +1,91 @@
+/* General container styling */
+.appContainer {
+    width: 100%;
+    max-width: 600px; /* Increased max-width for better alignment */
+    margin: 20px auto; /* Centered container */
+    padding: 20px; /* Added padding for spacing */
+    border: 1px solid #ccc; /* Border around the container */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Form selector styling */
+.formSelector {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+.formSelector button {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff; /* Border to match button color */
+    padding: 12px 20px; /* Increased padding for better button size */
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 15px; /* Increased margin for spacing */
+    font-size: 16px; /* Increased font size */
+}
+
+.formSelector button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3; /* Border color on hover */
+}
+
+/* Card styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+/* Heading styling */
+h2 {
+    margin-top: 0;
+    font-size: 24px; /* Larger font size for headings */
+    font-weight: bold; /* Bold heading */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px; /* Reduced margin for better spacing */
+    font-size: 16px; /* Increased font size */
+    font-weight: bold; /* Bold label text */
+}
+
+/* Input, textarea, and select styling */
+input[type="text"], textarea, select {
+    width: 100%; /* Full width for better alignment */
+    padding: 10px; /* Increased padding for better input size */
+    margin-top: 4px;
+    margin-bottom: 16px; /* Increased margin for spacing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Increased font size for better readability */
+}
+
+/* Textarea specific styling */
+textarea {
+    height: 80px; /* Increased height for better textarea size */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff; /* Border to match button color */
+    padding: 12px 20px; /* Increased padding for better button size */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px; /* Increased font size */
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3; /* Border color on hover */
+}

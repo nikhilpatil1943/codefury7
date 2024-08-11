@@ -1,7 +1,7 @@
-const express = require('express');
-const axios = require('axios');
-const router = express.Router();
+import express from 'express';
+import axios from 'axios';
 
+const router = express.Router();
 const API_KEY = '789b8db1e9e449d59c7104836241008';  // Your API key for WeatherAPI
 
 // GET endpoint to fetch weather data by latitude and longitude
@@ -22,4 +22,4 @@ router.get('/', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;
