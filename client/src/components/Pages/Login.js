@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('codefury7-1dg8.vercel.app/login', { username, password });
+      const response = await axios.post('https://codefury7-1dg8.vercel.app/login', { username, password });
       localStorage.setItem('token', response.data.token);
       setError(''); // Clear error on successful login
       navigate('/dashboard'); // Redirect to the dashboard or another route

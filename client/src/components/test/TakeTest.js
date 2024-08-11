@@ -8,7 +8,7 @@ const TakeTest = ({ testId, onSubmit }) => {
     useEffect(() => {
         const fetchTest = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/tests/${testId}`);
+                const response = await axios.get(`https://codefury7-1dg8.vercel.app/tests/${testId}`);
                 setTest(response.data);
                 setAnswers(Array(response.data.questions.length).fill(null));
             } catch (error) {
@@ -36,7 +36,7 @@ const TakeTest = ({ testId, onSubmit }) => {
             <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
                 {test.questions.map((question, questionIndex) => (
                     <div key={questionIndex}>
-                        <h3>{question.question}</h3>
+                        <h5>{question.question}</h5>
                         {question.options.map((option, optionIndex) => (
                             <div key={optionIndex}>
                                 <input

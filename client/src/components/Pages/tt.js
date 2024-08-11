@@ -16,7 +16,7 @@ const Testw = () => {
     const handleSubmitTest = (submittedAnswers) => {
         setAnswers(submittedAnswers);
         // Fetch the test data to calculate the score
-        axios.get(`codefury7-1dg8.vercel.app/tests/${currentTestId}`)
+        axios.get(`https://codefury7-1dg8.vercel.app/tests/${currentTestId}`)
             .then(response => setCurrentTest(response.data))
             .catch(error => console.error('Failed to fetch test', error));
     };

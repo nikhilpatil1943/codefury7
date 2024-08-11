@@ -25,7 +25,7 @@ const Dashboard = () => {
     const handleAlertSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('codefury7-1dg8.vercel.app/createalert', {
+            await axios.post('https://codefury7-1dg8.vercel.app/createalert', {
                 alertType,
                 description,
                 district
@@ -41,7 +41,7 @@ const Dashboard = () => {
     const handleTestSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('codefury7-1dg8.vercel.app/createtest', { questions });
+            await axios.post('https://codefury7-1dg8.vercel.app/createtest', { questions });
             alert('Test created successfully');
         } catch (error) {
             console.error('Error creating test:', error);

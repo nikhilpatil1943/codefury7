@@ -7,7 +7,7 @@ const TestList = ({ onStartTest }) => {
     useEffect(() => {
         const fetchTests = async () => {
             try {
-                const response = await axios.get('codefury7-1dg8.vercel.app/tests');
+                const response = await axios.get('https://codefury7-1dg8.vercel.app/tests');
                 setTests(response.data);
             } catch (error) {
                 console.error('Failed to fetch tests', error);

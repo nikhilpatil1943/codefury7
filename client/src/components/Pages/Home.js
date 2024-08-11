@@ -16,7 +16,7 @@ export const Home = () => {
 
           // Fetch weather data from the API
           axios
-            .get(`codefury7-1dg8.vercel.app/weather?lat=${lat}&lon=${lon}`)
+            .get(`https://codefury7-1dg8.vercel.app/weather?lat=${lat}&lon=${lon}`)
             .then((response) => {
               setWeatherData(response.data);
             })

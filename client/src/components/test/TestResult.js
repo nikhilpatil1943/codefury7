@@ -1,11 +1,14 @@
 import React from 'react';
 
 const TestResult = ({ test, answers }) => {
+    console.log(test,answers)
     const calculateScore = () => {
         let score = 0;
         test.questions.forEach((question, index) => {
-            if (answers[index] === question.correctAnswer) {
+            console.log(answers[index])
+            if (answers[index] === question.correctOption) {
                 score += 1;
+                // console.log()
             }
         });
         return score;
