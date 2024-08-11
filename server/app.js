@@ -25,6 +25,9 @@ app.use('/createtest', testroute); // Use the test route
 app.use('/tests',testr)
 app.use('/tests',testp)
 app.use('/getAlertByLocation',alertbydist)
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 
 
 
